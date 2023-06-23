@@ -2,6 +2,7 @@
   "name": "jogo-da-forca",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://seunomeusuário.github.io/nome-do-repositório/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -19,6 +20,7 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "gh-pages": "^5.0.0",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
@@ -39,5 +41,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "deploy": "vue-cli-service build && gh-pages -d dist"
 }
